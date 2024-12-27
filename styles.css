@@ -306,3 +306,362 @@ body {
         object-fit: cover;
     }
 }
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        margin: 1em;
+        padding: 0;
+    }
+
+    .item1 {
+    
+        h2 {
+            font-size: var(--size-2xl);
+        }
+    
+        .createPost {
+            width: 130px;
+        }
+        
+    }
+    
+    .item2 {
+    
+        h1 {
+            font-size: var(--size-4xl);
+        }
+    
+    
+    }
+    
+    .item3 {
+    
+        img {
+            width: 200px;
+            height: 180px;
+        }
+    
+        h3 {
+            font-size: var(--size-xl);
+        }
+    
+        p {
+            font-size: var(--size-base);
+        }
+    
+    }
+    
+    .item4 {
+    
+        h2 {
+            font-size: var(--size-2xl);
+        }
+    
+        img {
+            width: 120px;
+        }
+    }
+    
+    .item-5 {
+    
+        h3 {
+            font-size: var(--size-lg);
+        }
+    
+        
+    }
+    
+    .item6{
+        h2 {
+            font-size: var(--size-xl);
+        }
+        
+        img {
+            width: 130px;
+        }
+    }
+    
+    .item-7 {
+        h1 {
+            font-size: var(--size-5xl);
+        }
+    
+        .icons {
+            width: 130px;
+        }
+    }
+    
+    .item-8 {
+    
+        h1 {
+            font-size: var(--size-xl);
+            line-height: 1.5rem;
+        }
+    
+        img {
+            width: 220px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        /* margin: 2em 6em; for large screen*/
+        margin: 1em;
+        padding: 0;
+        grid-template-rows: 350px 180px 250px 500px 350px 180px 180px 350px;
+        grid-template-columns: 500px;
+        grid-template-areas:
+        'one'
+        'two'
+        'three'
+        'four'
+        'five'
+        'six'
+        'seven'
+        'eight';
+        border: 2px solid red;
+    }
+
+    /* === 1 === */
+    .item-2 {
+        background-color: #7e22ce;
+        color: var(--clr-white);
+        grid-area: one;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .item2 {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        text-align: center;
+        width: 90%;
+        flex-direction: column;
+    
+        h1 {
+            font-size: var(--size-5xl);
+        }
+    
+        .faster {
+            font-style: italic;
+            margin-right: .2em;
+        }
+    
+        .x {
+            color: #fcd34d;
+        }
+    
+        .star {
+            width: 170px;
+        }
+    
+    }
+
+
+    /* === 2 === */
+    .item-5 {
+        background-color: var(--clr-white);
+        grid-area: two;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        overflow: hidden;
+        padding: 1em;
+    
+        .platforms {
+            width: 280px;
+            margin-left: 1em;
+        }
+    
+        h3 {
+            font-size: var(--size-lg);
+            font-weight: 700;
+            line-height: 1.5rem;
+            width: 80%;
+            
+        }
+    
+        
+    }
+    .image {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+
+    /* === 3 === */
+    .item-6 {
+        background-color: #fcd34d;
+        grid-area: three;
+        max-width: 100%;
+        max-height: 254px;
+        padding: 1rem;
+        overflow: hidden;
+    
+    }
+    .item6{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+        h2 {
+            text-align: left;
+            line-height: 2rem;
+            width: 80%;
+            margin-bottom: 1.5rem;
+            font-size: var(--size-xl);
+        }
+        
+        img {
+            width: 130px;
+            margin: 0 auto;
+        }
+    }
+
+    /* === 4 === */
+    .item-3 {
+        background-color: #a5b4fc;
+        grid-area: four;
+        display: flex;
+        align-items: center;
+    
+        
+    }
+    .item3 {
+        display: flex;
+        gap: 1em;
+        padding: 2em;
+        flex-direction: column;
+        overflow: hidden;
+    
+        img {
+            width: 200px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 1em;
+        }
+    
+        h3 {
+            font-size: var(--size-xl);
+        }
+    
+        p {
+            font-size: var(--size-base);
+        }
+    
+    }
+
+    /* === 5 === */
+    .item-8 {
+        background-color: #7e22ce;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+        color: var(--clr-white);
+        grid-area: five;
+    
+        h1 {
+            font-size: var(--size-xl);
+            line-height: 1.5rem;
+        }
+    
+        img {
+            width: 220px;
+    
+            object-fit: cover;
+        }
+    }
+
+    /* === 6 === */
+    .item-7 {
+        background-color: var(--clr-white);
+        grid-area: six;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        justify-content: space-between;
+        
+        h1 {
+            font-size: var(--size-5xl);
+        }
+    
+        .icons {
+            width: 130px;
+        }
+    }
+
+
+    /* === 7 === */
+    .item-1 {
+        background-color: #fee2e2;
+        grid-area: seven;
+        display: flex;
+        align-items: center;
+        
+    }
+    .item1 {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    
+        h2 {
+            width: 70%;
+            letter-spacing: -2px;
+            line-height: 1.8rem;
+            font-size: var(--size-2xl);
+        }
+    
+        span {
+            color: #7e22ce;
+            font-style: italic;
+        }
+    
+        .createPost {
+            width: 130px;
+        }
+        
+    }
+    
+    /* === 8 === */
+    .item-4 {
+        background-color: #fcd34d;
+        grid-area: eight;
+        display: flex;
+        align-items: center;
+        
+    }
+    .item4 {
+        display: flex;
+        padding: 1em;
+        flex-direction: column;
+        text-align: left;
+        gap: 3em;
+    
+        h2 {
+            width: 80%;
+            font-size: var(--size-2xl);
+        }
+    
+        img {
+            width: 120px;
+            margin-left: .5em;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}
